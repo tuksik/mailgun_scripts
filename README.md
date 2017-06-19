@@ -19,4 +19,4 @@ This Python script downloads all messages stored in Mailgun (note that mailgun s
 
 
 #### Usage example:
-`python download_all_messages.py samples.mailgun.org key-123a1a1abc12a1a1234567a123456a1a`
+`python download_messages.py samples.mailgun.org key-123a1a1abc12a1a1234567a123456a1a`
