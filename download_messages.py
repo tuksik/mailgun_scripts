@@ -5,7 +5,7 @@ import datetime
 from datetime import datetime, timedelta 
 
 if len(sys.argv) != 3:  
-    print "Usage: python retrieve.py domain api_key"
+    print "Usage: python download_messages.py domain api_key"
     sys.exit(1)
 
 # map input variables to parameters
@@ -50,6 +50,7 @@ while True:
         			print("ok")
 		else:  
     			print "Oops! Something went wrong: %s" % r.content
+	
 	events_url = mglogs.json()["paging"]["next"]
 	
 	print("------------- fetching next page (upto 100 emails) -----------")
